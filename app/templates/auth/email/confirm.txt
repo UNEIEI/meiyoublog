@@ -1,0 +1,12 @@
+{{ user.username }}，你好
+
+欢迎加入没有博客！
+
+点击以下链接验证你的账户：
+
+{{ url_for('auth.confirm', token=token, _external=True) }}
+
+
+没有博客团队
+
+注意: 请勿回复此邮箱。

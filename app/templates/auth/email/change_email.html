@@ -1,0 +1,6 @@
+<p>{{ user.username }}，你好</p>
+<p>验证你的新邮箱 <a href="{{ url_for('auth.change_email', token=token, _external=True) }}">click here</a>.</p>
+<p>或者，你可以把以下链接复制到浏览器地址栏：</p>
+<p>{{ url_for('auth.change_email', token=token, _external=True) }}</p>
+<p>没有博客团队</p>
+<p><small>注意: 请勿回复此邮箱。</small></p>
